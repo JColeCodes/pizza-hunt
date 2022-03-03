@@ -19,7 +19,7 @@ const commentController = {
                 }
                 res.json(dbPizzaData);
             })
-            .catch(err => res.status(400).json(err));
+            .catch(err => res.json(err));
     },
 
     // Add a reply to a comment
@@ -36,7 +36,7 @@ const commentController = {
                 }
                 res.json(dbPizzaData);
             })
-            .catch(err => res.status(400).json(err));
+            .catch(err => res.json(err));
     },
 
     // Remove comment
@@ -59,7 +59,7 @@ const commentController = {
                 }
                 res.json(dbPizzaData);
             })
-            .catch(err => res.status(400).json(err));
+            .catch(err => res.json(err));
     },
 
     // Remove a reply
